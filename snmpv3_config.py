@@ -25,12 +25,7 @@ user_pass = req_user_pass.replace("{",
                                               "").replace('"',
                                                           "").split(":")[1]
 
-ucs_list = [
-    "ucs1.compute.wrw1.edc.strln.net", "ucs1.compute.pao1.edc.strln.net",
-    "ucs1.compute.ams1.edc.strln.net", "ucs1.compute.syd1.edc.strln.net",
-    "ucs1.compute.fra1.edc.strln.net", "ucs1.compute.sin1.edc.strln.net",
-    "ucs1.compute.nrt1.edc.strln.net"
-]
+ucs_list = []
 
 for host in ucs_list:
     sysLocation = host.split(".")[2-3].upper()
